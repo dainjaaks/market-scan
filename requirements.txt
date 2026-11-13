@@ -1,0 +1,7 @@
+yfinance
+pandas
+numpy
+lxml
+requests
+html5lib
+beautifulsoup4
