@@ -37,7 +37,7 @@ jobs:
           mkdir -p site
           for i in 1 2 3; do
             python market_scan.py --universe file --tickers-file tickers.txt \
-              --chunk 10 --pause 6 --html site/index.html && break
+              --chunk 10 --pause 6 --force --html site/index.html && break
             echo "Attempt $i failed, waiting 5 minutes"; sleep 300
           done
           test -f site/index.html
